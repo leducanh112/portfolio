@@ -41,13 +41,13 @@
   border-radius: 100%;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   width: 120px;
   height: 120px;
 }
 
 .skillImageContainer img {
-  width: 75%;
+  width: 75px;
 }
 
 .skill p {
@@ -98,4 +98,24 @@
   font-size: 25px;
   list-style-type: disc;
   margin-left: 17px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+
+  }
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+  
 }
